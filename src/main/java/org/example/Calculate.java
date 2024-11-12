@@ -193,6 +193,13 @@ public class Calculate {
         return operands.pop();
     }
 
+    /**
+     * Computes the final result of the mathematical expression.
+     * First, it checks the validity of the expression, then converts it to postfix notation,
+     * and finally evaluates the result.
+     *
+     * @return the result of the computation as a string, or an error message if the expression is invalid
+     */
     public String compute() {
         if (!check()) {
             return "Ошибка: Некорректное выражение.";
